@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Semester Project</string>
+    <string name="button">Begin Game</string>
+    <string name="button2">Settings</string>
+    <string name="button3">Help</string>
+    <string name="coins">Coins</string>
+    <string name="back">Back</string>
+    <string name="help">How to Play: Move phone left and right to jump up on the planets!</string>
+</resources>
