@@ -5,5 +5,9 @@
     <string name="button3">Help</string>
     <string name="coins">Coins</string>
     <string name="back">Back</string>
-    <string name="help">How to Play: Move phone left and right to jump up on the planets!</string>
+    <string name="help">\u2022 How to Play: Move phone left and right to jump up on the planets!</string>
+    <string name="pause">Pause</string>
+    <string name="quit">Quit</string>
+    <string name="resume">Resume</string>
+    <string name="more">More+</string>
 </resources>

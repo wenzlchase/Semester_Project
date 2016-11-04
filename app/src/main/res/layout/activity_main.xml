@@ -15,41 +15,54 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button"
-        android:layout_marginBottom="90dp"
-        android:textSize="15sp"
+        android:layout_marginBottom="75dp"
+        android:textSize="16sp"
+        android:background="@drawable/round_button"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-
-
-         />
+        android:layout_centerHorizontal="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button2"
         android:text="@string/button2"
-        android:textSize="15sp"
-        android:layout_alignTop="@+id/button"
+        android:textSize="17sp"
+        android:background="@drawable/round_button"
+        android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="29dp" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button3"
         android:text="@string/button3"
-        android:textSize="15sp"
-        android:layout_alignTop="@+id/button"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button"
-        android:layout_marginLeft="35dp"
-        android:layout_marginStart="35dp" />
+        android:textSize="20sp"
+        android:background="@drawable/round_button"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/more"
+        android:background="@drawable/rectangle_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignRight="@+id/button3"
+        android:layout_alignEnd="@+id/button3" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/coins"
-        android:layout_centerHorizontal="true"
         android:textSize="30sp"
         android:id="@+id/textView"
-        android:textColor="#00BCD4"/>
+        android:textColor="#00BCD4"
+        android:background="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 
 
 
