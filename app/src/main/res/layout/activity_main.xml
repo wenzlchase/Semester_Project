@@ -58,10 +58,16 @@
         android:textSize="30sp"
         android:id="@+id/textView"
         android:textColor="#00BCD4"
-        android:background="#FFFFFF"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@drawable/coins"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
 
 
 

@@ -2,28 +2,61 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/space5"
     >
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/space2"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/back_button"
         android:text="@string/back"
         android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="73dp"
+        android:layout_marginBottom="41dp"
         android:textSize="20sp"
         android:background="@drawable/round_button"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-       />
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/music"
+        android:id="@+id/textView3"
+        android:textColor="#FF1744"
+        android:textSize="40sp"
+        android:layout_marginTop="109dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="61dp"
+        android:layout_marginStart="61dp" />
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchbutton"
+        android:text="@string/on_off"
+        android:background="#FFFFFF"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/volume"
+        android:textColor="#FF1744"
+        android:layout_marginTop="47dp"
+        android:textSize="40sp"
+        android:layout_below="@+id/textView3"
+        android:layout_toLeftOf="@+id/switchbutton"
+        android:layout_toStartOf="@+id/switchbutton"
+        android:id="@+id/textView4" />
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_alignLeft="@+id/switchbutton"
+        android:layout_alignStart="@+id/switchbutton" />
+
 
 
 </RelativeLayout>
