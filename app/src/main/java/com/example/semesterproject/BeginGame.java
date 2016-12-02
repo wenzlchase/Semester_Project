@@ -27,11 +27,5 @@ public class BeginGame extends AppCompatActivity {
             }
         });
 
-        /*String url = "https://www.youtube.com/watch?v=OaOiHVgP3Pw"
-        MediaPlayer mediaPlayer = new MediaPlayer();
-        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-        mediaPlayer.setDataSource(url);
-        mediaPlayer.prepare(); // might take long! (for buffering, etc)
-        mediaPlayer.start();*/
     }
 }

@@ -3,6 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/space4">
+
     <Button
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -21,7 +22,17 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-
+        <ImageView
+            android:layout_width="200sp"
+            android:layout_height="200sp"
+            android:src="@drawable/moon"
+            android:layout_marginTop="65dp"
+            android:contentDescription="The moon the aleins will jump on"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/alien3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

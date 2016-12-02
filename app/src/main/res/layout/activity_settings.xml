@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/switchbutton"
         android:text="@string/on_off"
-        android:background="#FFFFFF"
+        android:background="#757575"
         android:layout_alignBottom="@+id/textView3"
         android:layout_toRightOf="@+id/textView3"
         android:layout_toEndOf="@+id/textView3"
@@ -51,11 +51,14 @@
         android:layout_toStartOf="@+id/switchbutton"
         android:id="@+id/textView4" />
     <SeekBar
-        android:layout_width="wrap_content"
+        android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/textView4"
         android:layout_alignLeft="@+id/switchbutton"
-        android:layout_alignStart="@+id/switchbutton" />
+        android:layout_alignStart="@+id/switchbutton"
+        android:background="#757575"
+        android:indeterminate="false"
+        android:layout_alignBottom="@+id/textView4" />
 
 
 

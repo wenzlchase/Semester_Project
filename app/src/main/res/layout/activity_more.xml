@@ -1,21 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/gridview"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:columnWidth="90dp"
-    android:numColumns="2"
-    android:verticalSpacing="10dp"
-    android:horizontalSpacing="10dp"
-    android:stretchMode="columnWidth"
-    android:gravity="center"
-    android:background="@drawable/space7">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/gridLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/space7">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coins"
+        android:textSize="30sp"
+        android:id="@+id/textView"
+        android:textColor="#00BCD4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:src="@drawable/coins"
+        android:layout_alignTop="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:id="@+id/imageView" />
 
-<Button
+
+    <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@drawable/round_button"
-    android:text="@string/back"/>
+    android:text="@string/back"
+    android:id="@+id/button5"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="48dp"
+    android:textSize="20sp"/>
+
+    <ImageView
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:src="@drawable/alein1"
+        android:id="@+id/imageView1"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rodger"
+        android:textColor="#FFFFFF"
+        android:background="#8E24AA"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/imageView1"
+        android:layout_toLeftOf="@+id/button5"
+        android:layout_toStartOf="@+id/button5"
+        android:layout_marginTop="37dp" />
+       <ImageView
+           android:layout_width="150sp"
+           android:layout_height="150sp"
+           android:id="@+id/imageView2"
+           android:src="@drawable/alein2"
+           android:layout_marginTop="68dp"
+           android:layout_alignParentTop="true"
+           android:layout_toRightOf="@+id/imageView1"
+           android:layout_toEndOf="@+id/imageView1"
+           android:layout_marginLeft="30dp"
+           android:layout_marginStart="30dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/al"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toRightOf="@+id/button5"
+        android:layout_toEndOf="@+id/button5"
+        android:background="#8E24AA"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView7" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_of_rodger"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView6"
+        android:layout_marginTop="29dp"
+        android:background="#8E24AA"
+        android:layout_below="@+id/button6"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_of_al"
+        android:textColor="#FFFFFF"
+        android:id="@+id/textView8"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toRightOf="@+id/button5"
+        android:layout_toEndOf="@+id/button5"
+        android:background="#8E24AA"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:text="@string/buy"
+        android:layout_alignTop="@+id/button7"
+        android:layout_alignRight="@+id/textView5"
+        android:layout_alignEnd="@+id/textView5" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:text="@string/buy"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/button8"
+        android:layout_alignEnd="@+id/button8" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_page"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView1"
+        android:layout_toEndOf="@+id/imageView1"
+        android:id="@+id/button8" />
 
 
-</GridView>
+</RelativeLayout>

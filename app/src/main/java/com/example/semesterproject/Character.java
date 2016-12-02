@@ -7,39 +7,28 @@ import android.view.View;
 import android.widget.Button;
 
 
-
-/**
- * Chase Wenzl
+/** Chase Wenzl
+ *
  */
-public class MoreActivity extends AppCompatActivity {
+public class Character extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_more);
+        setContentView(R.layout.activity_more2);
 
         Button button = (Button) findViewById(R.id.button5);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MoreActivity.this, MainActivity.class);
+                Intent intent = new Intent(Character.this, MoreActivity.class);
                 startActivity(intent);
             }
         });
-        Button button2 = (Button) findViewById(R.id.button8);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MoreActivity.this, Character.class);
-                startActivity(intent);
-            }
-        });
+
+
+
 
     }
 }
-
-
-
-
-
-
 

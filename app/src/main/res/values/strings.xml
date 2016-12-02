@@ -13,4 +13,11 @@
     <string name="music">Music</string>
     <string name="on_off">On or Off</string>
     <string name="volume">Volume</string>
+    <string name="rodger">Rodger the Alein</string>
+    <string name="al">Al the Alein</string>
+    <string name="price_of_rodger">200 Coins</string>
+    <string name="price_of_al">100 Coins</string>
+    <string name="next_page">Next Page</string>
+    <string name="buy">Buy</string>
+    <string name="previous_page">Previous Page</string>
 </resources>
