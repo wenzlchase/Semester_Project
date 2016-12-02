@@ -64,7 +64,7 @@
     <ImageView
         android:layout_width="40sp"
         android:layout_height="40sp"
-        android:src="@drawable/coins"
+        android:src="@drawable/coin"
         android:layout_alignTop="@+id/textView"
         android:layout_toRightOf="@+id/textView"
         android:layout_toEndOf="@+id/textView" />
