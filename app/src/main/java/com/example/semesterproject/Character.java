@@ -17,7 +17,7 @@ public class Character extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_more2);
 
-        Button button = (Button) findViewById(R.id.button5);
+        Button button = (Button) findViewById(R.id.PButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -26,7 +26,14 @@ public class Character extends AppCompatActivity {
             }
         });
 
-
+        Button button2 = (Button) findViewById(R.id.home_button);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Character.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

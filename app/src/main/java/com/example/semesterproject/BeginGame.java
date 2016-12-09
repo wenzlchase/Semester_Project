@@ -1,11 +1,17 @@
 package com.example.semesterproject;
 
+import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorManager;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.Scene;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 /**
@@ -29,3 +35,4 @@ public class BeginGame extends AppCompatActivity {
 
     }
 }
+

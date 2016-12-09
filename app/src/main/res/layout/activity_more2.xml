@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
-    android:background="@drawable/space6">
+    android:background="@drawable/space8">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/previous_page"
         android:id="@+id/PButton"
+        android:layout_marginRight="31dp"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:textSize="30sp"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="54dp"
-        android:layout_marginEnd="54dp"
-    />
+        android:layout_marginEnd="31dp" />
 
 
     <TextView
@@ -28,11 +30,113 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/coins"
+        android:src="@drawable/coin"
         android:id="@+id/imageView3"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/textView9"
         android:layout_toEndOf="@+id/textView9" />
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/phil"
+        android:src="@drawable/phil"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView9"
+        android:layout_alignRight="@+id/imageView3"
+        android:layout_alignEnd="@+id/imageView3" />
+    <ImageView
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:id="@+id/astronaut"
+        android:src="@drawable/astronaut"
+        android:layout_alignBottom="@+id/phil"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buy1"
+        android:text="@string/buy"
+        android:layout_alignTop="@+id/buy2"
+        android:layout_alignRight="@+id/PButton"
+        android:layout_alignEnd="@+id/PButton"
+        android:layout_marginRight="29dp"
+        android:layout_marginEnd="29dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buy2"
+        android:text="@string/buy"
+        android:layout_below="@+id/phil"
+        android:layout_alignRight="@+id/phil"
+        android:layout_alignEnd="@+id/phil"
+        android:layout_marginTop="29dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/astronaut"
+        android:background="#64B5F6"
+        android:layout_below="@+id/buy1"
+        android:layout_alignLeft="@+id/buy1"
+        android:layout_alignStart="@+id/buy1"
+        android:layout_marginTop="38dp"
+        android:id="@+id/textView10"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phil"
+        android:background="#64B5F6"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignLeft="@+id/phil"
+        android:layout_alignStart="@+id/phil"
+        android:id="@+id/textView11"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_of_alfred"
+        android:background="#64B5F6"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_alignRight="@+id/buy1"
+        android:layout_alignEnd="@+id/buy1"
+        android:id="@+id/textView13"
+        android:textColor="#FFFFFF"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_of_phil"
+        android:background="#64B5F6"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:id="@+id/textView12"
+        android:textColor="#FFFFFF"/>
+    <ImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/coin"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_toLeftOf="@+id/textView13"
+        android:layout_toStartOf="@+id/textView13" />
+    <ImageView
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/coin"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toLeftOf="@+id/textView12"
+        android:layout_toStartOf="@+id/textView12" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:background="@drawable/round_button"
+        android:id="@+id/home_button"
+        android:layout_below="@+id/textView13"
+        android:layout_alignLeft="@+id/PButton"
+        android:layout_alignStart="@+id/PButton" />
 
 
 
