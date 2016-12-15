@@ -18,7 +18,6 @@ import android.widget.ToggleButton;
 public class SettingsActivity extends AppCompatActivity {
 
     Switch aSwitch;
-    SharedPreferences preferences;
 
    protected void onCreate(Bundle savedInstanceState){
        super.onCreate(savedInstanceState);
@@ -31,16 +30,14 @@ public class SettingsActivity extends AppCompatActivity {
            @Override
            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                if(isChecked==true){
-                   SharedPreferences.Editor editor = preferences.edit();
-                   editor.putBoolean("tgpref", true); // value to store
-                   editor.commit();
+
+
                    Toast.makeText(getBaseContext(),"On",Toast.LENGTH_SHORT).show();
                    mediaPlayer.start();
                }
                else{
-                   SharedPreferences.Editor editor = preferences.edit();
-                   editor.putBoolean("tgpref", false); // value to store
-                   editor.commit();
+
+
                    Toast.makeText(getBaseContext(),"Off",Toast.LENGTH_SHORT).show();
                    mediaPlayer.stop();
                }
@@ -49,16 +46,6 @@ public class SettingsActivity extends AppCompatActivity {
        });
 
 
-       SharedPreferences preferences = getPreferences(MODE_PRIVATE);
-       boolean tgpref = preferences.getBoolean("tgpref", true);  //default is true
-       if (tgpref = true) //if (tgpref) may be enough, not sure
-       {
-           aSwitch.setChecked(true);
-       }
-       else
-       {
-           aSwitch.setChecked(false);
-       }
        Button button = (Button) findViewById(R.id.back_button);
                button.setOnClickListener(new View.OnClickListener() {
                    @Override
